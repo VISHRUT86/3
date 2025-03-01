@@ -1,0 +1,92 @@
+/* General Navbar Styling */
+*{
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+ 
+
+  position: sticky;
+    top: 0; /* Sticks to the top */
+    /* width: 100%; */
+    /* background-color: #333; */
+    /* color: white; */
+    /* padding: 10px 20px; */
+    z-index: 1000; /*
+
+
+
+    background-color: #f8f9fa;
+    /* padding: 15px 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px white;
+    /* border-radius: 10px; */
+    border: 2px solid;
+  }
+  
+  /* Navbar Title */
+  .navbar h2 {
+    color: #00ffcc;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Navbar Links */
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+
+    transition: color 0.3s ease;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffc100;
+  }
+  
+  /* Logout Button */
+  .navbar button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .navbar ul {
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

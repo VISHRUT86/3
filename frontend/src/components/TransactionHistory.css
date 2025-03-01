@@ -1,0 +1,92 @@
+.transaction-history {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ✅ Filter Dropdown */
+.filter-container {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.filter-container label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* ✅ Table Styling */
+.table-container {
+  overflow-x: auto;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.transactions-table th {
+  background-color: #f4f4f4;
+}
+
+.transactions-table .income {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.transactions-table .expense {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* ✅ CSV Button Styling */
+.csv-btn-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.csv-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.csv-btn:hover {
+  background-color: #0056b3;
+}
+.back-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}

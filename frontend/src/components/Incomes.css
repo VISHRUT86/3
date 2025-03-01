@@ -1,0 +1,136 @@
+/* Income.css */
+
+/* Container Styling */
+.income-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #dfebdf;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+                rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    text-align: center;
+}
+
+/* Heading */
+.income-heading {
+    color: #28a745;
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Form Styling */
+.income-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.income-form input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.income-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.income-form button:hover {
+    background-color: #218838;
+}
+
+/* Table Styling */
+.income-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-top: 20px;
+    text-align: center; /* Ensures text alignment is centered */
+}
+
+.income-table th, 
+.income-table td {
+    padding: 14px;
+    text-align: center; /* Centers text inside each cell */
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.income-table thead {
+    text-align: center;
+}
+
+.income-table th {
+    background: #1e1e2f;
+    color: white;
+}
+
+.income-table tr:nth-child(even) td {
+    background-color: rgba(40, 167, 69, 0.1);
+}
+
+.income-table tr:nth-child(odd) td {
+    background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Delete Button */
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #dc3545;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    color: #c9302c;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.filters select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Dark Mode Support */
+[data-theme="dark"] .income-container {
+    background-color: #1e1e2f;
+    color: #ccc;
+}
+
+[data-theme="dark"] .income-table th {
+    background-color: #343a40;
+}
+
+[data-theme="dark"] .income-table tr:nth-child(even) td {
+    background-color: rgba(40, 167, 69, 0.2);
+}
+
+[data-theme="dark"] .income-table tr:nth-child(odd) td {
+    background-color: rgba(226, 12, 45, 0.2);
+}
