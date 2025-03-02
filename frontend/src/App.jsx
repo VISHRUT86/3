@@ -13,6 +13,7 @@ import Expenses from "./components/Expenses";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import TransactionHistory from "./components/TransactionHistory";
+import Bills from './components/Bills'
 
 function App() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
@@ -53,7 +54,8 @@ function MainContent({ theme, toggleTheme }) {
           <Route path="/expenses" element={<Expenses />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/transaction-history" element={<TransactionHistory />} /> 
+          <Route path="/transaction-history" element={<TransactionHistory />} />
+          <Route path="/bills" element={<Bills />} /> 
         </Routes>
       </div>
     </>

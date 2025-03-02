@@ -1,0 +1,39 @@
+.bills-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.bill-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.bill-form input,
+.bill-form select,
+.bill-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.bills-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bills-list th, .bills-list td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.bills-list th {
+  background-color: #f4f4f4;
+}
+
+.bills-list button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}

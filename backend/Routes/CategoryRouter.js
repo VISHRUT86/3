@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose"); // ✅ FIX: Import mongoose
 
-const Category = require("../models/Category");
+const Category = require("../Models/Category");
 const router = express.Router();
 
 // ➕ Add New Category

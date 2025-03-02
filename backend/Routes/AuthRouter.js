@@ -4,23 +4,11 @@ const jwt = require("jsonwebtoken");
 const User = require("../Models/User");
 const ensureAuthenticated = require("../Middlewares/Auth");
 
-const PasswordResetToken = require("../models/PasswordResetToken");
-const nodemailer = require("nodemailer");
-const crypto = require("crypto");
 const dotenv = require("dotenv");
 
 dotenv.config();
 
 const router = express.Router();
-
-// ✅ Nodemailer Setup with Env Variables
-const transporter = nodemailer.createTransport({
-  service: "gmail",
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.EMAIL_PASSWORD,
-  },
-});
 
 // ✅ Forgot Password Route
 router.post("/forgot-password", async (req, res) => {

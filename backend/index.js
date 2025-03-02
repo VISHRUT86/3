@@ -8,6 +8,7 @@ const IncomeRouter = require("./Routes/IncomeRouter"); // ✅ Added this line
 const DashboardRouter = require("./Routes/DashboardRouter");
 const ensureAuthenticated = require('./Middlewares/Auth');
 const transactionRoutes = require("./Routes/TransactionRouter");
+const billRoutes = require("./Routes/billRoutes");
 
 require('dotenv').config();
 require('./Models/db');
@@ -33,6 +34,7 @@ app.use('/categories', CategoryRouter);
 app.use('/incomes', ensureAuthenticated, IncomeRouter); // ✅ Added this line
 app.use("/dashboard", DashboardRouter);
 app.use("/transactions", transactionRoutes);
+app.use("/api/bills", billRoutes);
 
 
 
